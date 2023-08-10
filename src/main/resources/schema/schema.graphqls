@@ -1,6 +1,6 @@
 type Query {
+    helloWorld: String
     shows(titleFilter: String): [Show]
-    noShows: String
 }
 
 type Show {

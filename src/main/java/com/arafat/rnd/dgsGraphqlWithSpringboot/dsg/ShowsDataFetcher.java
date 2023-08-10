@@ -18,16 +18,16 @@ public class ShowsDataFetcher {
     );
 
     @DgsQuery
+    public String helloWorld() {
+        return "Hello World... Welcome to Graphql with DGS";
+    }
+
+    @DgsQuery
     public List<Show> shows(@InputArgument String titleFilter) {
         if(titleFilter == null) {
             return shows;
         }
         return shows.stream().filter(s -> s.title().contains(titleFilter)).toList();
-    }
-
-    @DgsQuery
-    public String noShows() {
-        return "THERE IS NO SHOW !";
     }
 }
 
