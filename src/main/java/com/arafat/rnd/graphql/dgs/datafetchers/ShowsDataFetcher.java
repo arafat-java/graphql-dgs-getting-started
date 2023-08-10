@@ -1,4 +1,4 @@
-package com.arafat.rnd.dgsGraphqlWithSpringboot.dsg;
+package com.arafat.rnd.graphql.dgs.datafetchers;
 
 import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsQuery;
